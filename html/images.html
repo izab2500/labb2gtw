@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildredigering2</title>
+    <meta name="description"
+        content="Utforska mina bildredigeringar, jämför före och efter bilder redigerade i Photopea för webben.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+    <!--Header & nav-->
+    <header>
+        <div id="parent-icons" class="icons-main-container">
+            <span id="open" class="show">&#9776;</span>
+            <span id="close">&#10005;</span>
+        </div>
+        <div>
+            <img src="../images/logo.svg" alt="Logotyp">
+        </div>
+        <nav id="nav" class="hidden-nav-mobile">
+            <ul>
+                <li><a href="../index.html">Startsida</a></li>
+                <li><a class="active" href="../html/images.html">Bildredigering</a></li>
+                <li><a href="../html/about.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section class="images-main-container">
+            <h1>Bildredigering</h1>
+            <div class="flex-col-images">
+                <div class="flex-images">
+                    <figure class="img-container aspect-ratio-1">
+                        <picture>
+                            <source srcset="../images/bildserie001org.avif">
+                            <img src="../images/bildserie001org.jpg" width="500" height="500" fetchpriority="high"
+                                alt="En berggrund täckt med grönska och en grön äng under en ljusblå himmel med vita moln">
+                        </picture>
+                        <figcaption>Bild 1 original</figcaption>
+                    </figure>
+                    <figure class="img-container aspect-ratio-1">
+                        <picture>
+                            <source srcset="../images/bildserie001.avif">
+                            <img src="../images/bildserie001.jpg" width="500" height="500" fetchpriority="high"
+                                alt="En berggrund täckt med grönska och en grön äng under en ljusblå himmel med vita moln">
+                        </picture>
+
+                        <figcaption>Bild 1 redigerad</figcaption>
+                    </figure>
+                </div>
+                <p> <strong>Bild 1 redigerades i Photopea:</strong> För varje förändring
+                    skapades ett nytt lager eller en mask. Objektet togs bort med hjälp av lassoverktyget, följt av
+                    fyllning och innehållsmedveten utfyllning. Därefter justerades nyans, mättnad och färgbalans för att
+                    justera eller ändra färger. För att förbättra himlen användes klonverktyget för att skapa mer
+                    enhetliga delar. </p>
+            </div>
+            <div class="flex-col-images">
+                <div class="flex-images">
+                    <figure class="img-container aspect-ratio-2">
+                        <picture>
+                            <source srcset="../images/bildserie002org-cropped.avif">
+                            <img src="../images/bildserie002org.jpg" width="500" height="500"
+                                alt="En byggnad under en klarblå himmel" loading="lazy">
+                        </picture>
+                        <figcaption>Bild 2 original</figcaption>
+                    </figure>
+                    <figure class="img-container aspect-ratio-2">
+                        <picture>
+                            <source media="(min-width:520px)" srcset="../images/bildserie002.avif">
+                            <source media="(max-width:520px)" srcset="../images/bildserie002-cropped.avif">
+                            <img src="../images/bildserie002.jpg" width="500" height="500"
+                                alt="En byggnad under en klarblå himmel" loading="lazy">
+                        </picture>
+                        <figcaption>Bild 2 redigerad</figcaption>
+                    </figure>
+                </div>
+                <p> <strong>Bild 2 redigerades i Photopea:</strong> För varje ändring skapades ett nytt lager eller en
+                    mask. Objektet togs bort med lassoverktyget och lappverktyget, och vissa delar beskars. Därefter
+                    justerades nyans, mättnad och färgbalans för att förbättra bilden. För himlen användes klonverktyget
+                    för att skapa en mer enhetlig bakgrund. </p>
+            </div>
+            <div class="flex-col-images">
+                <div class="flex-images">
+                    <figure class="img-container aspect-ratio-3">
+                        <picture>
+                            <source srcset="../images/bildserie003org.avif">
+                            <img src="../images/bildserie003org.jpg" width="500" height="500"
+                                alt="Tre person som klättrar på ett berg" loading="lazy">
+                        </picture>
+                        <figcaption>Bild 3 original</figcaption>
+                    </figure>
+                    <figure class="img-container aspect-ratio-3">
+                        <picture>
+                            <source srcset="../images/bildserie003.avif">
+                            <img src="../images/bildserie003.jpg" width="500" height="500"
+                                alt="Tre person som klättrar på ett berg" loading="lazy">
+                        </picture>
+                        <figcaption>Bild 3 redigerad</figcaption>
+                    </figure>
+                </div>
+                <p> <strong>Bild 3 redigerades i Photopea:</strong> För varje ändring skapades ett nytt lager eller en
+                    mask. Objektet togs bort med klonverktyget, och därefter justerades nyans, mättnad samt färgbalans
+                    för att förbättra bildens färger och kontrast. </p>
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; ziba2500@student.miun.se alla rättigheter reserverade.</p>
+
+    </footer>
+</body>
+
+</html>

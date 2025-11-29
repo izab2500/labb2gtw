@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background-color: antiquewhite;
+}
+
+body {
+    height: 100%;
+    max-width: 1440px;
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    color: darkslategrey;
+    letter-spacing: 2px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+/**Active länk stil*/
+.active {
+    padding: 1px 4px;
+    background-color: black;
+    color: white;
+}
+
+/*Göm ikoner för mobil**/
+.icons-main-container>span {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 80px;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+
+.icons-main-container>span {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icons-main-container>span:last-child {
+    color: darkred;
+}
+
+
+header>div:nth-of-type(1) {
+    position: absolute;
+}
+
+header>div:nth-of-type(2) {
+    height: 99%;
+}
+
+header>div:nth-of-type(2)>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+
+header li,
+header a {
+    display: inline-block;
+}
+
+header li:nth-of-type(1),
+li:nth-last-of-type(2) {
+    margin-right: 75px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+main {
+    margin: 80px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-main-container {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+
+.header-main-container>h1 {
+    text-align: center;
+}
+
+.header-main-container>figure {
+    width: 100%;
+}
+
+.header-main-container img {
+    width: 100%;
+    opacity: 0.80;
+    object-fit: cover;
+}
+
+.img-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 45px;
+}
+
+.img-container {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.img-container>.aspect-ration-1,
+.img-container>.aspect-ration-3 {
+    aspect-ratio: 8/6;
+}
+
+.img-container>.aspect-ration-2 {
+    aspect-ratio: 5/7;
+}
+
+.about-assignment-main-container>p {
+    max-width: 80ch;
+    letter-spacing: 2px;
+}
+
+.images-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.flex-images {
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+
+}
+
+.flex-col-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.flex-col-images p {
+    max-width: 70ch;
+}
+
+.about-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-main-container>figure {
+    border-top: 4px solid yellow;
+    border-left: 4px solid yellow;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 45px;
+}
+
+.about-main-container>figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-main-container p {
+    max-width: 70ch;
+}
+
+footer {
+    height: 60px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur {
+    filter: blur(20px);
+}
+
+@media (max-width:520px) {
+
+    .header-main-container img,
+    .img-container,
+    .img-container img {
+        height: auto;
+    }
+}
+
+/**Media queries*/
+@media (max-width:980px) {
+
+    .img-main-container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header>div:nth-of-type(2) {
+        height: 100%;
+        margin-inline: auto;
+    }
+
+    .icons-main-container>.show {
+        display: inline-block;
+    }
+
+    header>nav {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid black;
+        padding: 40px;
+        background-color: black;
+        z-index: 11;
+    }
+
+    .hidden-nav-mobile {
+        display: none;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    header a {
+        color: yellow;
+    }
+
+    .flex-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

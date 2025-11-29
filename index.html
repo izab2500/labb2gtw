@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida2</title>
+    <meta name="description"
+        content="Utforska mina bildredigeringar, logotyper, faviconer och redigerade bilder skapade i Photopea för webben.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <!--Header & nav-->
+    <header>
+        <div id="parent-icons" class="icons-main-container">
+            <span id="open" class="show">&#9776;</span>
+            <span id="close">&#10005;</span>
+        </div>
+        <div>
+            <img src="images/logo.svg" alt="Logotyp">
+        </div>
+        <nav id="nav" class="hidden-nav-mobile">
+            <ul>
+                <li><a class="active" href="index.html">Startsida</a></li>
+                <li><a href="html/images.html">Bildredigering</a></li>
+                <li><a href="html/about.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Main-->
+    <main>
+
+        <section class="header-main-container">
+            <h1>Hero bild</h1>
+            <figure>
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="images/header-large.avif">
+                    <source media="(min-width: 768px)" srcset="images/header-medium.avif">
+                    <source media="(max-width: 768px)" srcset="images/header-small.avif">
+                    <img src="images/images/header.png" width="1200" height="433" alt="" fetchpriority="high">
+                </picture>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Redigerade bilder</h2>
+            <div class="img-main-container">
+                <figure class="img-container aspect-ratio-1">
+                    <picture>
+                        <source srcset="images/bildserie001.avif">
+                        <img src="images/bildserie001.jpg" height="500" width="500" loading="lazy"
+                            alt="En berggrund täckt med grönska och en grön äng under en ljusblå himmel med vita moln">
+                    </picture>
+                    <figcaption>Bild 1</figcaption>
+                </figure>
+                <figure class="img-container aspect-ratio-2">
+                    <picture>
+                        <source srcset="images/bildserie002-cropped.avif">
+                        <img src="images/bildserie002.jpg" height="500" width="500" loading="lazy"
+                            alt="En byggnad under en klarblå himmel">
+                    </picture>
+                    <figcaption>Bild 2</figcaption>
+                </figure>
+                <figure class="img-container aspect-ratio-3">
+                    <picture>
+                        <source srcset="images/bildserie003.avif">
+                        <img src="images/bildserie003.jpg" height="500" width="500" loading="lazy"
+                            alt="Tre person som klättrar på ett berg">
+                    </picture>
+                    <figcaption>Bild 3</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Om uppgiften</h2>
+            <div class="about-assignment-main-container">
+                <p>Uppgiften innebär att använda ett bildredigeringsprogram (i mitt fall Photopea) för att redigera och
+                    skapa bilder
+                    samt spara dem i olika format. Målet är att skapa två faviconer, en logotyp, en hero-bild, en
+                    profilbild och redigera minst tre bilder (se bild 1 - 3). Dessa bilder ska sedan användas på en
+                    webbplats som jag
+                    skapar, bestående av tre sidor och
+                    publiceras på internet.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; ziba2500@student.miun.se alla rättigheter reserverade.</p>
+    </footer>
+</body>
+
+</html>
